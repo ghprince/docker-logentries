@@ -54,7 +54,7 @@ function start(opts) {
     if (token) {
       this.push(token);
       this.push(' ');
-      this.push(obj.line);
+      this.push(JSON.stringify(obj.line));
       this.push('\n');
     }
 
